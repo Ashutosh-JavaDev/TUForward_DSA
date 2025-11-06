@@ -7,8 +7,8 @@ public class SecondMax {
                 max = arr[i];
 
             }
-            else if(arr[i]>secmax){
-                secmax=arr[i];
+            else if(max>secmax){
+                secmax=max;
             }
 
         }
@@ -16,7 +16,7 @@ public class SecondMax {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 32, 12, 33, 2, 42 };
+        int arr[] = { 32, 12, 33, 52, 42,432 };
         int res = second(arr);
         System.out.println(res);
     }
