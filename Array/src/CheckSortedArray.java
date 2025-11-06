@@ -1,22 +1,19 @@
 public class CheckSortedArray {
     static boolean result(int arr[]) {
-        boolean ans = true;
-        int j = 1;
-        for (int i = 0; i < arr.length; i++) {
-            if ((arr[i] > arr[j]) || arr[i] < arr[j]) {
-                ans = true;
-                j++;
-            } else {
-                ans = false;
-                break;
-            }
-            
+     
+      
+        for (int i = 0; i < arr.length-1; i++) {
+          if(arr[i]>arr[i+1]){
+            return false;
         }
-        return ans;
+            
+   
+        }
+        return true;
     }
 
     public static void main(String[] args) {
-        int arr[] = { 21, 23, 42, 13, 42 };
+        int arr[] = { 21, 22,23,24,25 };
         boolean res = result(arr);
         System.out.println(res);
     }
