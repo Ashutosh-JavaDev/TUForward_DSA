@@ -17,7 +17,7 @@ public class SecondMax {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 32, 12, 33, 52, 42,432 };
+        int arr[] = { 32, 12, 33, 52, 42 };
         int res = second(arr);
         System.out.println(res);
     }
