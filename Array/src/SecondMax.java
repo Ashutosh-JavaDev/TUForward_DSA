@@ -4,12 +4,13 @@ public class SecondMax {
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
-                max = arr[i];
-
-            }
-            else if(max>secmax){
                 secmax=max;
+                max = arr[i];
             }
+            else if(arr[i]>secmax && max!=arr[i]){
+                secmax=arr[i];
+            }
+            
 
         }
         return secmax;
