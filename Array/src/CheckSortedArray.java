@@ -11,5 +11,9 @@ public class CheckSortedArray {
         }
         return ans;
     }
-    
+    public static void main(String[] args) {
+        int arr[]={21,23,42,13,42};
+        boolean res=result(arr);
+        System.out.println(res);
+    }
 }
