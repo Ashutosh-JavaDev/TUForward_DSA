@@ -1,8 +1,9 @@
 import java.util.HashSet;
-
+import java.util.Arrays;
 public class RemoveDuplicate {
     static HashSet<Integer> removeDuplicate(int arr[]) {
         HashSet <Integer> set=new HashSet<>();
+        Arrays.sort(arr);
         for(int i=0;i<arr.length;i++){
             set.add(arr[i]);
         }
