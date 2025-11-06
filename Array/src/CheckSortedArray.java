@@ -1,18 +1,18 @@
-import java.util.Arrays;
 public class CheckSortedArray {
     static boolean result(int arr[]) {
-        Arrays.sort(arr);
-        for (int i = 0; i < arr.length-1; i++) {
-          if(arr[i]>arr[i+1]){
-            return false;
+        boolean asc = true, desc = true;
+    
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) asc = false;   // breaks ascending
+            if (arr[i] < arr[i + 1]) desc = false;  // breaks descending
         }
-            
-        }
-        return true;
+    
+        return asc || desc;
     }
+    
 
     public static void main(String[] args) {
-        int arr[] = { 5,4,3,2,1};
+        int arr[] = { 9,8,7,2,6 };
         boolean res = result(arr);
         System.out.println(res);
     }
