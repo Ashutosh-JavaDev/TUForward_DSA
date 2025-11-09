@@ -32,7 +32,9 @@ public class NthTimeRotate {
                 arr[i-1]=arr[i];
                 // return;
             }
+          else{
             arr[i-1]=arr[i];
+          }
         }
         arr[arr.length-1]=first;
     }
