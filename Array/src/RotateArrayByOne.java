@@ -4,7 +4,7 @@ public class RotateArrayByOne {
     public static void rotatedArray(int[] arr){
        
         if(arr.length==1){
-            System.out.println(arr[0]);
+            System.out.print(arr[0]);
         }
         else{
             for(int i=1;i<arr.length;i++){
@@ -16,8 +16,8 @@ public class RotateArrayByOne {
        
     }
     public static void main(String[] args) {
-        int arr[]={1,2,3,4,5};
+        int arr[]={-1,0,3,6};
         rotatedArray(arr);  
-        // System.out.println(arr);
+       
     }
 }
