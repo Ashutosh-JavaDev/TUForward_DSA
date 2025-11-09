@@ -16,7 +16,6 @@ public class RotateArrayByOne {
             System.out.print(arr[0]);
         }
         System.out.println();
-    //    return str;
     }
     public static void main(String[] args) {
         int arr[]={-1,0,3,6};
