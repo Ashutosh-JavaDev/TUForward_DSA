@@ -1,4 +1,5 @@
 public class NthTimeRotate {
+    // O(NxK);
     public static void rotate_N_Array(int arr[], int k) {
         if (arr.length <= 1) {
             return;
@@ -15,11 +16,25 @@ public class NthTimeRotate {
                         arr[i - 1] = arr[i];
 
                     }
-                   arr[arr.length - 1] = first;
+                    arr[arr.length - 1] = first;
                 }
                 System.out.println();
             }
         }
+
+    }
+    // O(N)
+
+    public static void s(int arr[], int k) {
+        int first=arr[0];
+        for(int i=0;i<arr.length-1;i++){
+            if(k!=0){
+                arr[i-1]=arr[i];
+                // return;
+            }
+            arr[i-1]=arr[i];
+        }
+        arr[arr.length-1]=first;
     }
 
     public static void main(String[] args) {
