@@ -15,4 +15,9 @@ public class RotateArrayByOne {
         }
         System.out.print(temp);
     }
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5};
+        rotatedArray(arr);  
+        System.out.println(arr);
+    }
 }
