@@ -5,7 +5,10 @@ public class MergeSortedArray {
         HashSet <Integer>set=new HashSet<>();
         int x=one.length+two.length;
         for(int i=0;i<x;i++){
-            
+            set.add(one[i]);
+            set.add(two[i]);
         }
+        System.out.print(set+" ");
+        System.out.println();
     }    
 }
