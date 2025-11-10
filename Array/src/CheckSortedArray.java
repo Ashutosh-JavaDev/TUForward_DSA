@@ -1,8 +1,6 @@
-import java.util.Arrays;
-
 public class CheckSortedArray {
     static boolean result(int arr[]) {
-        Arrays.sort(arr);
+        
         boolean asc = true, desc = true;
     
         for (int i = 0; i < arr.length - 1; i++) {
