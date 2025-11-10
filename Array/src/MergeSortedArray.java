@@ -11,4 +11,9 @@ public class MergeSortedArray {
         System.out.print(set+" ");
         System.out.println();
     }    
+    public static void main(String[] args) {
+        int one[]={3,2,1,34,2};
+        int two[]={4,5,2,5,1};
+        merge(one, two);
+    }
 }
