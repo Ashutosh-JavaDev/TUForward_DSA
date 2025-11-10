@@ -25,22 +25,17 @@ public class NthTimeRotate {
 
     }
     // O(N)
-
-    public static void s(int arr[], int k, int x) {
-        if (k == 0) {
-            return;
-        } else {
-            int first = arr[0];
-            arr[x - 1] = arr[x];
-            arr[arr.length - 1] = first;
-            s(arr, k--, x++);
-        }
-
+public static void functionCall(int arr[],int k){
+    int n=arr.length;
+    if(n<=1||k%n==0){
+        return;
     }
+}
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5, 6 };
-        s(arr, 10, 1);
+        rotate_N_Array(arr, 10);
+        // s(arr, 10, 1);
         for (int val : arr) {
             System.out.print(val + " ");
         }
