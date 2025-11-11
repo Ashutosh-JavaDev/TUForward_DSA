@@ -9,7 +9,7 @@ public class FindthemissingNumber {
         return miss;
     }
     public static void main(String[] args) {
-        int arr[]={0,1,2,3,4};
+        int arr[]={0,1,3};
         int res=missing(arr);
         System.out.println(res);
     }
