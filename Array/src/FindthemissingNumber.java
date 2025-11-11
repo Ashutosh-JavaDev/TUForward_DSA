@@ -8,4 +8,9 @@ public class FindthemissingNumber {
         int miss=actual-sum;
         return miss;
     }
+    public static void main(String[] args) {
+        int arr[]={0,1,2,3,4};
+        int res=missing(arr);
+        System.out.println(res);
+    }
 }
