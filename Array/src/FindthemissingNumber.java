@@ -17,10 +17,10 @@ public class FindthemissingNumber {
     }
     public static void main(String[] args) {
         int arr[]={0,1,3};
-        // int res=missingNumber(arr);
-        // System.out.println(res);
-        int res=miss(arr);
+        int res=missingNumber(arr);
         System.out.println(res);
-        miss(arr);
+        // int res=miss(arr);
+        // System.out.println(res);
+        // miss(arr);
     }
 }
