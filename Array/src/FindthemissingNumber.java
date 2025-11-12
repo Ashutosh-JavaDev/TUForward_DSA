@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class FindthemissingNumber {
     public static int missingNumber(int arr[]){
         int sum=0;
