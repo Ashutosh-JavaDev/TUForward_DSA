@@ -18,7 +18,13 @@ public class MajorityElement {
         }
         return max;
     }
-
+public static int findElement(int arr[]){
+    Arrays.sort(arr);
+    int n = arr.length;
+    for(int i=0;i<arr.lenngth;i++){
+        
+    }
+}
     public static void main(String[] args) {
         int arr[] = { 7, 0, 0, 1, 7, 7, 2, 7, 7 };
         int res = element(arr);
