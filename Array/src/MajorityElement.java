@@ -19,21 +19,28 @@ public class MajorityElement {
         }
         return max;
     }
-public static int findElement(int arr[]){
-    Arrays.sort(arr);
-    int n = arr.length;
-    int max=0;
-    HashMap<Integer,Integer>map=new HashMap<>();
-    for(int i=0;i<n;i++){
-        int freq=map.getOrDefault(n, 0)+1;
-    max=Math.max(max, freq);
-        map.put(n, freq);
+
+    public static int findElement(int arr[]) {
+        Arrays.sort(arr);
+        int n = arr.length;
+        int max = 0;
+        int maxValue=arr[0];
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            int freq = map.getOrDefault(arr[i], 0) + 1;
+            map.put(arr[i], freq);
+            max = Math.max(max, freq);
+            if(freq>maxValue){
+                max=freq;
+                maxValue=arr[i];
+            }
+        }
+        return maxValue;
     }
-    return max;
-}
+
     public static void main(String[] args) {
         int arr[] = { 7, 0, 0, 1, 7, 7, 2, 7, 7 };
-        int res = element(arr);
-        System.out.println("Data: " + res);  // Output: 5
+        int res = findElement(arr);
+        System.out.println("Data: " + res); // Output: 5
     }
 }
