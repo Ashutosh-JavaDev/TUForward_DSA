@@ -14,13 +14,14 @@ public class Stock {
 
     public static int sellbuy(int arr[]) {
         int sum = 0;
-        int min = arr[0];
-        int max = arr[0];
-        int maxindex = 0;
-        int minindex = 0;
+       
         if (isSorted(arr)) {
             return 0;
         } else {
+            int min = arr[0];
+            int max = arr[0];
+            int maxindex = 0;
+            int minindex = 0;
             for (int i = 0; i < arr.length; i++) {
 
                 if (arr[i] < min) {
@@ -36,6 +37,7 @@ public class Stock {
                 }
 
             }
+            System.out.println(min+" "+max);
         }
 
         return sum;
