@@ -25,11 +25,11 @@ public class Stock {
                 }
             }
         }
-        return sum;
+        return min;
     }
     public static void main(String[] args) {
-        int arrr[]={5,4,3,2,1};
-        boolean res=isSorted(arrr);
+        int arrr[]={2,4,1,3,6};
+        int res=sellbuy(arrr);
         System.out.println(res);
     }
 }
