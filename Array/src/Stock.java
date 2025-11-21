@@ -15,16 +15,30 @@ public class Stock {
     public static int sellbuy(int arr[]){
         int sum=0;
         int min=arr[0];
+        int max=arr[0];
+        int maxindex=0;
+        int minindex=0;
         if(isSorted(arr)){
             return 0;
         }
         else{
             for(int i=0;i<arr.length;i++){
+              
                 if(arr[i]<min){
                     min=arr[i];
+                    minindex=i;
                 }
+                if(arr[i]>max){
+                    max=arr[i];
+                    maxindex=i;
+                }
+                if(){
+
+                }
+                
             }
         }
+       
         return min;
     }
     public static void main(String[] args) {
