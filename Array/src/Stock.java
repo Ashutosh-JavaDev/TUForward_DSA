@@ -32,14 +32,14 @@ public class Stock {
                     max=arr[i];
                     maxindex=i;
                 }
-                if(){
-
+                if(minindex<maxindex){
+                    sum=max-min;
                 }
                 
             }
         }
        
-        return min;
+        return sum;
     }
     public static void main(String[] args) {
         int arrr[]={2,4,1,3,6};
