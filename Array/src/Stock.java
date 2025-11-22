@@ -13,34 +13,20 @@ public class Stock {
     }
 
     public static int sellbuy(int arr[]) {
-        int sum = 0;
-       
-        if (isSorted(arr)) {
-            return 0;
-        } else {
-            int min = arr[0];
-            int max = arr[0];
-            int maxindex = 0;
-            int minindex = 0;
-            for (int i = 0; i < arr.length; i++) {
+        if (isSorted(arr)) return 0;
 
-                if (arr[i] < min) {
-                    min = arr[i];
-                    minindex = i;
-                }
-                if (arr[i] > max) {
-                    max = arr[i];
-                    maxindex = i;
-                }
-                if (minindex < maxindex) {
-                    sum = max - min;
-                }
-
+        int min = arr[0];
+        int maxProfit = 0;
+    
+        for (int i = 0; i < arr.length-1; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            } else {
+                maxProfit = Math.max(maxProfit, arr[i] - min);
             }
-            System.out.println(min+" "+max);
         }
-
-        return sum;
+        return maxProfit;
+       
     }
 
     public static void main(String[] args) {
