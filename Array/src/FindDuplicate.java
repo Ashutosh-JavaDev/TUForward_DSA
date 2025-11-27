@@ -1,6 +1,6 @@
 import java.util.HashSet;
 import java.util.Arrays;
-public class RemoveDuplicate {
+public class FindDuplicate {
     static HashSet<Integer> removeDuplicate(int arr[]) {
         HashSet <Integer> set=new HashSet<>();
         HashSet <Integer> dupli=new HashSet<>();
