@@ -6,7 +6,7 @@ public class firstNonRepeating {
         char ch=' ';
         LinkedHashSet<String>set=new LinkedHashSet<>(Arrays.asList(str));
         for(int i=0;i<str.length()-1;i++){
-            
+            set.add(str);
         }
         return ch;
     }
