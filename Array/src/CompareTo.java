@@ -3,8 +3,8 @@ public class CompareTo {
         return str1.compareTo(str2);
     }
     public static void main(String[] args) {
-        String str="Ashutosh";
-        String str2="Ashutosa";
+        String str="Ashutosb";
+        String str2="Ashutosu";
         int res=compare(str, str2);
         System.out.println(res);
     }
