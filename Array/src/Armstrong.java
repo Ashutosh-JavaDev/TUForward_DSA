@@ -22,7 +22,7 @@ public class Armstrong {
 
     }
     public static void main(String[] args) {
-        int num=153;
+        int num=372;
         boolean res=isArmstrong(num);
         System.out.println(res);
     }
